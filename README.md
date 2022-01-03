@@ -21,3 +21,14 @@ This is the list of things that can be transferred. If you want to transfer some
 - number
 - object
 - string
+
+## Note about transferring functions
+A [MessageChannel](https://developer.mozilla.org/en-US/docs/Web/API/MessageChannel) is used to tell one context to call the function. Since message responses are not called synchronously, **all functions are turned into async functions**. For example, if you are transferring the following code:
+```js
+(a, b) => a + b
+```
+You would have to call it like this:
+```js
+const decodedFnIsNowAsync = decode(transferredFunction)
+await decodedFnIsNowAsync(5, 6)
+```
