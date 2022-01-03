@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script type="module">
+    import { decode } from '../../lib/index.js'
+
+    new Worker('./worker.js', { type: 'module' }).onmessage = e => {
+      const { prime, palindrome } = decode(e.data)
+      document.body.innerText = `${prime},${palindrome}`
+    }
+  </script>
+</body>
+
+</html>

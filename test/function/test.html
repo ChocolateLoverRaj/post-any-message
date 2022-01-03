@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script type="module">
+    import { decode } from '../../lib/index.js'
+
+    new Worker('./worker.js', { type: 'module' }).onmessage = async e => {
+      console.log(e.data)
+      document.body.innerText = await decode(e.data)(5, 6)
+    }
+  </script>
+</body>
+
+</html>

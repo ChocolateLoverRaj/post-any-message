@@ -1,0 +1,35 @@
+{
+  "scripts": {
+    "lint": "eslint .",
+    "test": "cypress run",
+    "test:dev": "cypress open"
+  },
+  "name": "post-any-message",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ChocolateLoverRaj/post-any-message#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChocolateLoverRaj/post-any-message.git"
+  },
+  "devDependencies": {
+    "cypress": "^9.2.0",
+    "eslint": "^7.12.1",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1 || ^5.0.0",
+    "release-it": "^14.11.8"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "author": {
+    "name": "Rajas Paranjpe",
+    "url": "https://github.com/ChocolateLoverRaj"
+  },
+  "files": [
+    "lib"
+  ],
+  "description": "Like browser postMessage(), but you can transfer functions and stuff"
+}

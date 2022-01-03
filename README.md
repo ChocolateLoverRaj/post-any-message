@@ -1,0 +1,23 @@
+# post-any-message
+
+![Created with ](https://img.shields.io/badge/Created%20with-@programmerraj/create-3cb371?style=flat)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+Like browser postMessage(), but you can transfer functions and stuff
+
+## Use Case
+There are many environments when you have to use `postMessage()` to communicate (like [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers), [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers), Chrome Extensions).
+
+Posting messages let's you transfer *data* like numbers, strings, objects, and arrays. But what if you wanted to transfer a function? The goal of this package is to let you transfer anything.
+
+## Examples
+You can find examples in the `test` directory in the git repo.
+
+## What can be transferred?
+This is the list of things that can be transferred. If you want to transfer something that's not on the list, make an issue and it will probably be added to the list. One thing that could be added is transferring promises.
+- array
+- boolean
+- function (can transfer any parameters and return values that are on this list)
+- number
+- object
+- string

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script type="module">
+    import { decode } from '../../lib/index.js'
+
+    new Worker('./worker.js', { type: 'module' }).onmessage = e => {
+      document.body.innerText = decode(e.data)
+    }
+  </script>
+</body>
+
+</html>
