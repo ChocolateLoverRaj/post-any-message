@@ -31,5 +31,14 @@
   "files": [
     "lib"
   ],
-  "description": "Like browser postMessage(), but you can transfer functions and stuff"
+  "description": "Like browser postMessage(), but you can transfer functions and stuff",
+  "keywords": [
+    "postMessage",
+    "function",
+    "transfer",
+    "communicate",
+    "worker",
+    "webworker",
+    "message"
+  ]
 }
