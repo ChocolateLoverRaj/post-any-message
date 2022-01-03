@@ -5,7 +5,7 @@
     "test:dev": "cypress open"
   },
   "name": "post-any-message",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "homepage": "https://github.com/ChocolateLoverRaj/post-any-message#readme",
   "license": "MIT",
   "repository": {
