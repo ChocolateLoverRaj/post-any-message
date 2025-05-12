@@ -1,3 +1,8 @@
+> [!WARNING]  
+> I no longer use or maintain this library. I don't really code in JavaScript anymore (I switched to Rust). If you want to maintain or fork it let me know (you can email me) and I can put the link here.
+>
+> Also looking back at this project I think transferring functions through `postMessage` is a bad idea.
+
 # post-any-message
 
 ![Created with ](https://img.shields.io/badge/Created%20with-@programmerraj/create-3cb371?style=flat)
